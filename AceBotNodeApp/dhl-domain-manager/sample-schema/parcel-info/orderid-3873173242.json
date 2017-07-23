@@ -1,0 +1,45 @@
+{
+  "dimension": {
+    "length": 10,
+    "width": 20,
+    "height": 10
+  },
+  "address": {
+    "to": {
+      "name": "p",
+      "address": "ret",
+      "zip": "564"
+    },
+    "from": {
+      "name": "p",
+      "address": "q",
+      "zip": "2"
+    }
+  },
+  "tracking": {
+    "notification": {
+      "email": "rty",
+      "text": "567"
+    },
+    "updates": {
+      "upd1": [
+        "7/23/2017 6:37:23 PM",
+        "q",
+        "The instruction data for this shipment have been provided by the sender to DHL electronically"
+      ],
+      "upd2": null,
+      "upd3": null,
+      "upd4": null
+    },
+    "code": "-1",
+    "current_status":"The instruction data for"},
+    "id": -1,
+    "type": "Envelope1",
+    "description": "Envelope1",
+    "service": [
+      "DoorToDoor",
+      "Domestic",
+      "Normal"
+    ],
+    "weight": "10"
+  }

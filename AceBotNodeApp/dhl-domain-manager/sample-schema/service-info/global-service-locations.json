@@ -1,0 +1,66 @@
+{
+  "australia": {
+    "adelaide": [
+      {
+        "address": "382 Richmond Road DHL Express is the last building travelling West on Richmond Road at Netley. DHL Express is not within the airport. Netley 5037 South Australia",
+        "phone": "13 14 06",
+        "openingHours": [
+          "Mon - Fri 8:00am - 6:00pm",
+          "Sat 9:00am - 12:30pm"
+        ],
+        "LatestDropOff": [
+          "M-F 17:30",
+          "Sat is 12:00"
+        ]
+      }
+    ],
+    "melbourne": [
+      {
+        "address": "Melbourne Gateway 2-4 Mace Way, Melbourne Airport VIC 3045",
+        "phone": "13 14 06",
+        "openingHours": [
+          "Mon - Fri 9:00am to 5:30pm",
+          "Sat 8:00am to 12:00pm"
+        ],
+        "LatestDropOff": [
+          "5:00pm"
+        ]
+      },
+      {
+        "address": "Port Melbourne Service Centre 203 Ingles Street,Port Melbourne,VIC 3207",
+        "phone": "13 14 06",
+        "openingHours": [
+          "Mon-Fri: 8:00 am - 6:00 pm",
+          "Sat: 8:00 am - 12:00 pm (for collection only)"
+        ],
+        "LatestDropOff": [
+          "5:00pm Monday - Friday"
+        ]
+      },
+      {
+        "address": "South East Melbourne 55 Ricketts Road, Mount Waverley, Victoria 3149",
+        "phone": "13 14 06",
+        "openingHours": [
+          "Mon to Fri - 08:00 to 18:00",
+          "Sat - Sun - Closed"
+        ],
+        "LatestDropOff": [
+          "Saturday only - 08:00 to 12:00"
+        ]
+      }
+    ],
+    "Perth": [
+      {
+        "address": "Perth Service Centre 9 Dawson Rd (Off Affleck Rd) Perth Intl Airport WA 6105",
+        "phone": "13 14 06",
+        "openingHours": [
+          "Mon - Fri 8:00 to 6:00pm",
+          "Sat 8:00am to 12:00pm"
+        ],
+        "LatestDropOff": [
+          "5.00pm"
+        ]
+      }
+    ]
+  }
+}

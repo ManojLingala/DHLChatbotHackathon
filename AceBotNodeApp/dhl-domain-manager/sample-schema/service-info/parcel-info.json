@@ -1,0 +1,34 @@
+{
+  "types": [
+    "Envelope 1",
+    "Box 2",
+    "Box 3",
+    "Box 4",
+    "Box 5",
+    "Box 6",
+    "Box 7"
+  ],
+  "statue_messages": [
+    "The instruction data for this shipment have been provided by the sender to DHL electronically",
+    "The shipment has been processed in the parcel center",
+    "The international shipment has been processed in the parcel center of origin",
+    "The international shipment has been processed in the export parcel center",
+    "The shipment will be transported to the destination country and, from there, handed over to the delivery organization. ",
+    "The shipment has arrived in the destination country",
+    "The shipment is being prepared for delivery in the delivery depot",
+    "The shipment has been successfully delivered"
+  ],
+  "services_metrics": [
+    "Drop off",
+    "Pick up",
+    "Online",
+    "Phone",
+    "door-to-door",
+    "next-day",
+    "2-working-day",
+    "5-working-day",
+    "international",
+    "domestic",
+    "signature-on-delivery"
+  ]
+}

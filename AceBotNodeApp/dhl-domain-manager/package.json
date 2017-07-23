@@ -1,0 +1,15 @@
+{
+  "name": "dhl-domain-manager",
+  "description": "This app maintains DHL customer and service information",
+  "version": "1.0.0",
+  "main": "src/service.js",
+  "dependencies": {
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "couchbase": "^2.2.0",
+    "jsonpatch": "^3.0.0",
+    "flat": "^2.0.1",
+    "bluebird": "^2.9.30",
+    "body-parser": "^1.17.2"
+  }
+}
