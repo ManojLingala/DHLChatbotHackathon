@@ -40,3 +40,46 @@ C:\Users\prash\Desktop\Build\AceBotApp\AceBotApp\bin\ru\Microsoft.Bot.Builder.re
 C:\Users\prash\Desktop\Build\AceBotApp\AceBotApp\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
 C:\Users\prash\Desktop\Build\AceBotApp\AceBotApp\obj\Release\Bot Application.dll
 C:\Users\prash\Desktop\Build\AceBotApp\AceBotApp\obj\Release\Bot Application.pdb
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Bot Application.dll.config
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Bot Application.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Bot Application.pdb
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\AdaptiveCards.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Autofac.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Chronic.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Bot.Builder.Autofac.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Bot.Builder.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Bot.Connector.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Rest.ClientRuntime.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Newtonsoft.Json.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.Net.Http.Formatting.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.Web.Http.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.Web.Http.WebHost.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Autofac.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Bot.Builder.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Bot.Builder.Autofac.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.Bot.Connector.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.IdentityModel.Protocol.Extensions.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Microsoft.WindowsAzure.Configuration.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\Newtonsoft.Json.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.IdentityModel.Tokens.Jwt.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.Net.Http.Formatting.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.Web.Http.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\System.Web.Http.WebHost.xml
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\ar\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\cs\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\de-dE\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\en\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\es\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\fa\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\fr\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\it\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\ja\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\nl\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\ru\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\bin\zh-hans\Microsoft.Bot.Builder.resources.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\obj\Release\AceBotApp.csprojResolveAssemblyReference.cache
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\obj\Release\Bot Application.dll
+C:\Users\prash\Desktop\Build\dhlchatbot\AceBotApp\AceBotApp\obj\Release\Bot Application.pdb

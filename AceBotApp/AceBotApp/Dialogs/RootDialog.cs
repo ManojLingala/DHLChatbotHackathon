@@ -21,10 +21,9 @@
 
         public async virtual Task MessageReceivedAsync(IDialogContext context, IAwaitable<IMessageActivity> result)
         {
-            var message = await result;
-
+            var message = await result;            
             if (message.Value != null)
-            {               
+            {
                 dynamic value = message.Value;
                 string submitType = value.Type.ToString();
                 switch (submitType)
@@ -33,22 +32,23 @@
                         ParcelTypeModel query;
                         try
                         {
-                            query = ParcelTypeModel.Parse(value);
-                            string orderid = await constructOrderJson(query);
-                            await context.PostAsync($"Shipping order created successfully. Your orer id is {orderid}");                            
+                                            query = ParcelTypeModel.Parse(value);
+                                           string orderid = await constructOrderJson(query);
+                                            await context.PostAsync($"Shipping order created successfully. Your orer id is {orderid}");
+                            await context.PostAsync(submitType);
                         }
                         catch (InvalidCastException)
-                        {                           
+                        {
                             await context.PostAsync("Please complete all the search parameters");
                             return;
-                        }                       
+                        }
 
                         return;
                 }
             }
             else
             {
-               await context.Forward(new AcebotDialog(), ResumeAfterOptionDialog, message,CancellationToken.None);
+                await context.Forward(new AcebotDialog(), ResumeAfterOptionDialog, message,CancellationToken.None);
             }
         }
 

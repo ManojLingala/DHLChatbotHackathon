@@ -26,7 +26,8 @@ namespace AceBotApp.Dialogs
         [LuisIntent("None")]
         public async Task None(IDialogContext context, LuisResult result)
         {
-            string message = $"Sorry, I did not understand '{result.Query}'. Type 'help' if you need assistance.";          
+            string message = $"Sorry, I did not understand '{result.Query}'. Type 'help' if you need assistance.";
+            message += " For more details please visit http://www.dhl.com.au/en/express/resource_center/customer_service_faq.html";
             await context.PostAsync(message);
             context.Wait(this.MessageReceived);           
         }
@@ -34,7 +35,7 @@ namespace AceBotApp.Dialogs
         [LuisIntent("Tracking")]
         public async Task FetchParcelStatus(IDialogContext context, LuisResult result)
         {
-            
+            await context.PostAsync("Sure, let me help you with that, Shall we proceed?");
             //var fetchParcelStatusDialog = new FormDialog<FetchParcelStatusForm>(new FetchParcelStatusForm(), FetchParcelStatusForm.BuildForm, FormOptions.PromptInStart, result.Entities);
             var fetchParcelStatusDialog = FormDialog.FromForm(FetchParcelStatusForm.BuildForm);            
             context.Call<FetchParcelStatusForm>(fetchParcelStatusDialog, ResumeAfterFetchStatusFormDialog);   
@@ -43,8 +44,8 @@ namespace AceBotApp.Dialogs
 
         [LuisIntent("Location")]
         public async Task FetchDHLLocations(IDialogContext context, LuisResult result)
-        { 
-     
+        {
+            await context.PostAsync("Sure, let me help you with that, Shall we proceed?");
             var fetchParcelStatusDialog = FormDialog.FromForm(FetchDHLLocationsForm.BuildForm);
             context.Call<FetchDHLLocationsForm>(fetchParcelStatusDialog, ResumeAfterFetchDHLLocationsFormDialog);
         }
@@ -215,7 +216,7 @@ namespace AceBotApp.Dialogs
                     new Image()
                     {
                         Size = ImageSize.Large,
-                        Url = parcelType.ImageUrl
+                        Url = parcelType.ImageUrl                        
                     }
                 }
                 ,

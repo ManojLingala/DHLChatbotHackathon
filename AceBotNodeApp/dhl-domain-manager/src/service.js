@@ -17,7 +17,7 @@ app.get('/serviceLocations/:city', (req, res) => {
         .catch(error => {
             res.send(400, error);
         })
-});
+})
 
 app.get('/parcelInfo/:id', (req, res) => {
     const id = `orderid-${req.params.id}`;

@@ -58,7 +58,7 @@ namespace AceBotApp
             {
                 IConversationUpdateActivity update = message;
                 var client = new ConnectorClient(new Uri(message.ServiceUrl), new MicrosoftAppCredentials());
-                if (update.MembersAdded != null && update.MembersAdded.Count>0)
+                if (update.MembersAdded != null && update.MembersAdded.Count > 0)
                 {
                     foreach (var newMember in update.MembersAdded)
                     {

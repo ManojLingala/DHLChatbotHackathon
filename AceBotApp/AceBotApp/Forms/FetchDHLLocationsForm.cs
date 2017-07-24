@@ -15,7 +15,7 @@ namespace AceBotApp.Forms
 
         public static IForm<FetchDHLLocationsForm> BuildForm()
         {
-            return new FormBuilder<FetchDHLLocationsForm>()
+            return new FormBuilder<FetchDHLLocationsForm>()             
                .Build();
         }
 

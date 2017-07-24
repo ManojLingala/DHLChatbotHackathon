@@ -14,16 +14,21 @@ using System.Net.Http.Headers;
 using Newtonsoft.Json;
 using System.Text;
 using Newtonsoft.Json.Linq;
+using System.Web.Configuration;
+
+
+
 
 namespace AceBotApp.Services
 {
     public static class AceBotService
     {
+        public static string dhlDomainManagerBaseAddress = WebConfigurationManager.AppSettings["DHLDomainManagerBaseAddress"].ToString();
         public static string GetParcelAsync(FetchParcelStatusForm statusQuery)
         {
             using (var client = new WebClient())
             {
-                var json = client.DownloadString("http://localhost:1111/parcelinfo/" + statusQuery.TrackingNo);
+                var json = client.DownloadString(dhlDomainManagerBaseAddress + "parcelinfo/" + statusQuery.TrackingNo);
                 var serializer = new JavaScriptSerializer();
                 OrderModel model = serializer.Deserialize<OrderModel>(json);
                 return model.tracking.current_status.ToString();
@@ -35,7 +40,7 @@ namespace AceBotApp.Services
         {
             using (var client = new WebClient())
             {
-                var json = client.DownloadString("http://localhost:1111/serviceLocations/" + location);
+                var json = client.DownloadString(dhlDomainManagerBaseAddress + "serviceLocations/" + location);
                 var serializer = new JavaScriptSerializer();
                 List<LocationsModel> model = serializer.Deserialize<List<LocationsModel>>(json);
                 return model;
@@ -45,20 +50,7 @@ namespace AceBotApp.Services
         public static async Task<string> CreateShippingOrderAsync(OrderModel orderModel)
         {
             var json = new JavaScriptSerializer().Serialize(orderModel);
-            string requestUri = "http://localhost:1111/createParcel";
-            //using (var client = new HttpClient())
-            //{
-            //    client.BaseAddress = new Uri("http://localhost:1111/");
-            //    client.DefaultRequestHeaders.Accept.Clear();
-            //    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-
-            //    StringContent content = new StringContent(json);
-            //    HttpResponseMessage response = await client.PostAsync("createParcel", content);
-            //    if (response.IsSuccessStatusCode)
-            //    {
-            //        return await response.Content.ReadAsStringAsync();                    
-            //    }
-            //}
+            string requestUri = dhlDomainManagerBaseAddress+"createParcel";
             using (HttpClient client = new HttpClient())
             {
                 var httpContent = new StringContent(json.ToString(), Encoding.UTF8, "application/json");
@@ -74,19 +66,21 @@ namespace AceBotApp.Services
 
         public static IEnumerable<ParcelTypeModel> GetParcelImages()
         {
-            var images = new List<ParcelTypeModel>();
-            string directory = @".\Images\";
-            DirectoryInfo di = new DirectoryInfo(directory);    
-            foreach (var item in di.GetFiles("*.png"))
-            {
-                ParcelTypeModel parcel = new ParcelTypeModel()
+            string baseUrl = "http://52.171.59.183/Images/";
+            var images = new List<ParcelTypeModel>() {  new ParcelTypeModel()
                 {
-                    Name = item.Name,
-                    ImageUrl = item.FullName
-                };
-
-                images.Add(parcel);
+                    Name = "Envelope1",
+                    ImageUrl = baseUrl+"Envelope1.png"
+                }};
+            for (int i = 2; i < 8; i++)
+            {
+                images.Add(new ParcelTypeModel()
+                {
+                    Name = "Box" + i.ToString(),
+                    ImageUrl = baseUrl + "Box" + i.ToString() + ".png"
+                });
             }
+
             return images;
         }
 

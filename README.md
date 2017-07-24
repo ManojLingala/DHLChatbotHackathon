@@ -19,6 +19,12 @@ The minimum prerequisites to run this sample are:
 * Nodejs-application-javascriptversion ECMAScript6 
 
 
+#### Video Link 
+https://www.youtube.com/playlist?list=PLiUP6Q1XGwYYffsLFrKSypLGCX5gBzkjp
+
+#### Bit Bucket - Repo url 
+https://bitbucket.org/dhlchatbot/dhlchatbot.git
+
 
 #### LUIS Application
 If you want to test this sample, you have to import the pre-build [LuisBot.json](LuisBot.json) file to your LUIS account.
@@ -45,6 +51,7 @@ Finally, edit the [RootLuisDialog.cs](Dialogs/RootLuisDialog.cs#L14) file and up
 
 #### Where to find the Application ID and Subscription Key
 
+
 You'll need these two values to configure the LuisDialog through the LuisModel attribute:
 
 1. Application ID
@@ -59,6 +66,9 @@ You'll need these two values to configure the LuisDialog through the LuisModel a
     
     ![Programmatic API Key](images/prereqs-apikey.png)
     
+
+Note: Our Demo link is only accessible till Aug 10th due to limitations on the cloud subscriptions.
+If you are testing beyond this date, Please let us know on mlingala@student.unimelb.edu.au / prashanth.claw@gmail.com
 
 ### Code Highlights
 
